@@ -13,14 +13,13 @@ module.exports = yeoman.generators.Base.extend({
     ));
 
     var prompts = [{
-      type: 'confirm',
-      name: 'someOption',
-      message: 'Would you like to enable this option?',
-      default: true
+      type: 'prompt',
+      name: 'appName',
+      message: 'Could you tell me the name of your new project?'
     }];
 
-    this.prompt(prompts, function (props) {
-      this.props = props;
+    this.prompt(prompts, function (answers) {
+      this.appName = answers.appName;
       // To access props later use this.props.someOption;
 
       done();
@@ -29,13 +28,34 @@ module.exports = yeoman.generators.Base.extend({
 
   writing: {
     app: function () {
+      this.mkdir('dist');
+      this.mkdir('dist/css');
+      this.mkdir('dist/favicon');
+      this.mkdir('dist/fonts');
+      this.mkdir('dist/images');
+      this.mkdir('dist/js');
+      this.mkdir('src');
+      this.mkdir('src/css');
+      this.mkdir('src/js');
       this.fs.copy(
         this.templatePath('_package.json'),
         this.destinationPath('package.json')
       );
       this.fs.copy(
+        this.templatePath('_Gruntfile.js'),
+        this.destinationPath('Gruntfile.js')
+      );
+      this.fs.copy(
         this.templatePath('_bower.json'),
         this.destinationPath('bower.json')
+      );
+      this.fs.copy(
+        this.templatePath('_.bowerrc'),
+        this.destinationPath('.bowerrc')
+      );
+      this.fs.copy(
+        this.templatePath('_style.css'),
+        this.destinationPath('src/css/style.css')
       );
     },
 
