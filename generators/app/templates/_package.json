@@ -9,6 +9,7 @@
     "gulp-imagemin": "^2.3.0",
     "gulp-notify": "^2.2.0",
     "gulp-postcss": "^5.1.10",
+    "gulp-uglify": "^1.2.0",
     "imagemin-pngquant": "^4.1.2",
     "postcss-color-short": "^0.1.0",
     "postcss-discard-comments": "^1.2.0",
