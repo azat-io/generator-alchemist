@@ -286,6 +286,14 @@ dist/images/
 And images will be automatically minify with Gulp plugin [Imagemin](https://github.com/sindresorhus/gulp-imagemin)
 
 
+## Author
+
+Azat S.
+
+* [GitHub](https://github.com/azat-io)
+* [Twitter](https://twitter.com/azat_io)
+* [FaceBook](https://facebook.com/azatklevec)
+
 ## License
 
 MIT
