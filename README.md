@@ -6,13 +6,21 @@
 
 ## Getting Started
 
+To use Alchemist Generator you need to set a few things:
+
+Yo:
+
 ```bash
 npm install -g yo
 ```
 
-### Yeoman Generators
+Gulp:
 
-Yeoman travels light. He didn't pack any generators when he moved in. You can think of a generator like a plug-in. You get to choose what type of application you wish to create, such as a Backbone application or even a Chrome extension.
+```bash
+npm install -g gulp
+```
+
+### Yeoman Generators
 
 To install generator-alchemist from npm, run:
 
@@ -20,14 +28,13 @@ To install generator-alchemist from npm, run:
 npm install -g generator-alchemist
 ```
 
-Finally, initiate the generator:
+Finally, initiate the generator to your project folder:
 
 ```bash
 yo alchemist
 ```
 
 ### Contents
-
 
 #### CSS
 
