@@ -235,10 +235,8 @@ th {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .container {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
@@ -260,8 +258,7 @@ th {
 }
 
 .row {
-  margin-right: -15px;
-  margin-left: -15px;
+  margin: auto -15px;
 }
 
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
@@ -334,8 +331,7 @@ th {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
-  margin-bottom: 2rem;
+  margin: 0 0 2rem 0;
   font-weight: 300;
 }
 
