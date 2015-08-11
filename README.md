@@ -4,35 +4,64 @@
 
 [Yeoman](https://github.com/yeoman/yeoman) generator for development a front-end web app using [Gulp](https://github.com/gulpjs/gulp) and [PostCSS](https://github.com/postcss/postcss) for the build process.
 
+Start your new project in a few seconds!
+
 ## Getting Started
 
 To use Alchemist Generator you need to set a few things:
 
-Yo:
+[Node.js](https://nodejs.org/)
+
+#### Yo:
 
 ```bash
-npm install -g yo
+$ npm install -g yo
 ```
 
-Gulp:
+#### Gulp:
 
 ```bash
-npm install -g gulp
+$ npm install -g gulp
 ```
 
-### Yeoman Generators
+### Usage
+
+![](https://github.com/azat-io/generator-alchemist/blob/master/images/alchemist.jpg?raw=true)
+
+Download this repository:
+
+```bash
+$ git clone https://github.com/azat-io/generator-alchemist.git
+```
 
 To install generator-alchemist from npm, run:
 
 ```bash
-npm install -g generator-alchemist
+$ npm install -g generator-alchemist
 ```
 
 Finally, initiate the generator to your project folder:
 
 ```bash
-yo alchemist
+$ yo alchemist
 ```
+
+After installation run gulp
+
+```bash
+$ gulp
+```
+
+That's all! You can start to work with your project files:
+
+* Write your HTML code in the folder /src/
+* Write your CSS code in the folder /src/css/
+* Write your JavaScript code in the folder /src/js/
+* Put your images to the folder /src/images/
+
+And all of this files will be automatically optimize and paste to your production folder /dist/
+
+Thank's for usage!
 
 ### Contents
 
@@ -287,22 +316,21 @@ to:
 Upload images to the folder:
 
 ```bash
-dist/images/
+/src/images/
 ```
 
-And images will be automatically minify with Gulp plugin [Imagemin](https://github.com/sindresorhus/gulp-imagemin)
+And images will be automatically minify with Gulp plugin [Imagemin](https://github.com/sindresorhus/gulp-imagemin) and puts to the folder /dist/images/
 
 
 ## Author
 
 Azat S.
 
-* [GitHub](https://github.com/azat-io)
-* [Twitter](https://twitter.com/azat_io)
-* [FaceBook](https://facebook.com/azatklevec)
+Follow me:
+[GitHub](https://github.com/azat-io)
+[Twitter](https://twitter.com/azat_io)
+[FaceBook](https://facebook.com/azatklevec)
 
 ## License
 
 MIT
-
-![](https://github.com/azat-io/generator-alchemist/blob/master/images/alchemist.jpg?raw=true)
