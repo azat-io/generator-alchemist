@@ -10,7 +10,7 @@ Start your new project in a few seconds!
 
 To use Alchemist Generator you need to set a few things:
 
-[Node.js](https://nodejs.org/)
+#### [Node.js](https://nodejs.org/)
 
 #### Yo:
 
@@ -63,13 +63,13 @@ And all of this files will be automatically optimize and paste to your productio
 
 Thank's for usage!
 
-### Contents
+## Contents
 
-#### CSS
+### CSS
 
-[Normalize CSS](https://github.com/necolas/normalize.css)
+##### [Normalize CSS](https://github.com/necolas/normalize.css)
 
-Grid System
+##### Grid System
 
 ```html
 <div class="container">
@@ -84,7 +84,7 @@ Grid System
 </div>
 ```
 
-#### PostCSS
+### PostCSS
 
 ##### [Autoprefixer](https://github.com/postcss/autoprefixer)
 
@@ -327,8 +327,11 @@ And images will be automatically minify with Gulp plugin [Imagemin](https://gith
 Azat S.
 
 Follow me:
+
 [GitHub](https://github.com/azat-io)
+
 [Twitter](https://twitter.com/azat_io)
+
 [FaceBook](https://facebook.com/azatklevec)
 
 ## License
