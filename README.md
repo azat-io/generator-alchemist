@@ -1,4 +1,4 @@
-# generator-redmouse [![Build Status](https://secure.travis-ci.org/azat-io/generator-redmouse.png?branch=master)](https://travis-ci.org/azat-io/generator-redmouse)
+# generator-alchemist [![Build Status](https://secure.travis-ci.org/azat-io/generator-alchemist.png?branch=master)](https://travis-ci.org/azat-io/generator-alchemist)
 
 > [Yeoman](http://yeoman.io) generator
 
@@ -23,16 +23,16 @@ npm install -g yo
 
 Yeoman travels light. He didn't pack any generators when he moved in. You can think of a generator like a plug-in. You get to choose what type of application you wish to create, such as a Backbone application or even a Chrome extension.
 
-To install generator-redmouse from npm, run:
+To install generator-alchemist from npm, run:
 
 ```bash
-npm install -g generator-redmouse
+npm install -g generator-alchemist
 ```
 
 Finally, initiate the generator:
 
 ```bash
-yo redmouse
+yo alchemist
 ```
 
 ### Getting To Know Yeoman

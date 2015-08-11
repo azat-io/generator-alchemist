@@ -1,10 +1,10 @@
 {
-  "name": "generator-redmouse",
+  "name": "generator-alchemist",
   "version": "0.0.0",
   "description": "Yeoman generator",
   "license": "MIT",
   "main": "app/index.js",
-  "repository": "azat-io/generator-redmouse",
+  "repository": "azat-io/generator-alchemist",
   "author": {
     "name": "Azat S.",
     "email": "azatklevec@gmail.com",
