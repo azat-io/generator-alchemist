@@ -48,6 +48,10 @@ module.exports = yeoman.generators.Base.extend({
         this.destinationPath('gulpfile.js')
       );
       this.fs.copy(
+        this.templatePath('_npm-debug.log'),
+        this.destinationPath('npm-debug.log')
+      );
+      this.fs.copy(
         this.templatePath('_bower.json'),
         this.destinationPath('bower.json')
       );
