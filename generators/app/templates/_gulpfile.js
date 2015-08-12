@@ -4,8 +4,8 @@ var cssnano = require('cssnano');
 var discardcomments = require('postcss-discard-comments');
 var focus = require('postcss-focus');
 var gulp = require('gulp');
-var htmlhint = require("gulp-htmlhint");
 var imagemin = require('gulp-imagemin');
+var jade = require('gulp-jade');
 var nested = require('postcss-nested');
 var notify = require('gulp-notify');
 var pngquant = require('imagemin-pngquant');
@@ -32,8 +32,13 @@ gulp.task('notify', function() {
 // HTML
 
 gulp.task('html', function() {
-  gulp.src("dist/**/*.html")
-    .pipe(htmlhint())
+  var YOUR_LOCALS = {};
+  gulp.src('src/jade/**/*.jade')
+    .pipe(jade({
+      pretty: true,
+      locals: YOUR_LOCALS
+    }))
+    .pipe(gulp.dest('dist/'))
 });
 
 // PostCSS

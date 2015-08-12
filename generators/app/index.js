@@ -35,8 +35,10 @@ module.exports = yeoman.generators.Base.extend({
       this.mkdir('dist/images');
       this.mkdir('dist/js');
       this.mkdir('src');
+      this.mkdir('src/jade');
       this.mkdir('src/css');
       this.mkdir('src/js');
+      this.mkdir('src/images');
       this.fs.copy(
         this.templatePath('_package.json'),
         this.destinationPath('package.json')
@@ -52,6 +54,10 @@ module.exports = yeoman.generators.Base.extend({
       this.fs.copy(
         this.templatePath('_.bowerrc'),
         this.destinationPath('.bowerrc')
+      );
+      this.fs.copy(
+        this.templatePath('_index.jade'),
+        this.destinationPath('src/jade/style.css')
       );
       this.fs.copy(
         this.templatePath('_style.css'),
