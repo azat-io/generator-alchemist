@@ -42,8 +42,8 @@ module.exports = yeoman.generators.Base.extend({
         this.destinationPath('package.json')
       );
       this.fs.copy(
-        this.templatePath('_Gruntfile.js'),
-        this.destinationPath('Gruntfile.js')
+        this.templatePath('_gulpfile.js'),
+        this.destinationPath('gulpfile.js')
       );
       this.fs.copy(
         this.templatePath('_bower.json'),
