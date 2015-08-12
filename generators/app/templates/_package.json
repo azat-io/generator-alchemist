@@ -1,6 +1,20 @@
 {
-  "name": "project-name",
+  "name": "generator-alchemist",
   "version": "0.1.0",
+  "description": "Development a front-end web app using Gulp and PostCSS",
+  "homepage": "https://github.com/azat-io/generator-alchemist",
+  "author": {
+    "name": "Azat S.",
+    "email": "azatklevec@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/azat-io/generator-alchemist.git"
+  },
+  "bugs": {
+    "url": "https://github.com/azat-io/generator-alchemist/issues"
+  },
   "devDependencies": {
     "autoprefixer-core": "^5.2.1",
     "cssnano": "^2.1.1",
@@ -19,5 +33,5 @@
     "postcss-short": "^0.3.0",
     "postcss-size": "^0.2.0",
     "precss": "^0.3.0"
-  },
+  }
 }
