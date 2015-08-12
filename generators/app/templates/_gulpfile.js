@@ -29,10 +29,14 @@ gulp.task('notify', function() {
     .pipe(notify('Done!'));
 });
 
+// HTML
+
 gulp.task('html', function() {
   gulp.src("dist/**/*.html")
     .pipe(htmlhint())
 });
+
+// PostCSS
 
 gulp.task('css', function () {
     var processors = [
@@ -61,11 +65,15 @@ gulp.task('css', function () {
         .pipe(gulp.dest('dist/css/*.min.css'));
 });
 
+// JavaScript
+
 gulp.task('js', function () {
     return gulp.src('src/js/*')
           .pipe(uglify())
         .pipe(gulp.dest('dist/js'));
 });
+
+// Image files
 
 gulp.task('images', function () {
     return gulp.src('src/images/*')
