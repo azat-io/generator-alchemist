@@ -4,9 +4,9 @@ var cssnano = require('cssnano');
 var discardcomments = require('postcss-discard-comments');
 var focus = require('postcss-focus');
 var gulp = require('gulp');
+var htmlhint = require('gulp-htmlhint');
 var imagemin = require('gulp-imagemin');
 var nested = require('postcss-nested');
-var notify = require('gulp-notify');
 var pngquant = require('imagemin-pngquant');
 var postcss = require('gulp-postcss');
 var precss = require('precss');
@@ -15,10 +15,16 @@ var size = require('postcss-size');
 var uglify = require('gulp-uglify')
 
 gulp.task('default', function() {
-  gulp.watch('src/**', function(event) {
+  gulp.watch('src/html/**', function(event) {
     gulp.run('html');
-    gulp.run('css');
+  });
+  gulp.watch('src/css/**', function(event) {
+    gulp.run('postcss');
+  });
+  gulp.watch('src/js/**', function(event) {
     gulp.run('js');
+  });
+  gulp.watch('dist/images/**', function(event) {
     gulp.run('images');
   });
 });
@@ -27,7 +33,7 @@ gulp.task('default', function() {
 // HTML
 
 gulp.task('html', function() {
-  gulp.src('src/**/*.html')
+  gulp.src('src/html/**/*.html')
       .pipe(htmlhint())
     .pipe(gulp.dest('dist/'))
 });
