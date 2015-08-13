@@ -29,12 +29,15 @@ gulp.task('notify', function() {
     .pipe(notify('Done!'));
 });
 
+
 // HTML
 
 gulp.task('html', function() {
-  gulp.src('src/jade/**/*.jade')
+  gulp.src('src/**/*.html')
+      .pipe(htmlhint())
     .pipe(gulp.dest('dist/'))
 });
+
 
 // PostCSS
 

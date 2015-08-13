@@ -30,6 +30,7 @@ gulp.task('notify', function() {
     .pipe(notify('Done!'));
 });
 
+
 // Jade
 
 gulp.task('jade', function() {
@@ -39,6 +40,16 @@ gulp.task('jade', function() {
     }))
     .pipe(gulp.dest('src/'))
 });
+
+
+// HTML
+
+gulp.task('html', function() {
+  gulp.src('src/**/*.html')
+      .pipe(htmlhint())
+    .pipe(gulp.dest('dist/'))
+});
+
 
 // PostCSS
 
