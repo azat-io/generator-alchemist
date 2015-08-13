@@ -1,13 +1,11 @@
 var autoprefixer = require('autoprefixer-core');
 var colorshort = require('postcss-color-short');
 var cssnano = require('cssnano');
-var discardcomments = require('postcss-discard-comments');
 var focus = require('postcss-focus');
 var gulp = require('gulp');
 var htmlhint = require('gulp-htmlhint');
 var imagemin = require('gulp-imagemin');
 var jade = require('gulp-jade');
-var nested = require('postcss-nested');
 var pngquant = require('imagemin-pngquant');
 var postcss = require('gulp-postcss');
 var precss = require('precss');
@@ -58,15 +56,13 @@ gulp.task('html', function() {
 
 gulp.task('postcss', function () {
     var processors = [
-        autoprefixer({browsers: ['last 5 version', 'ie 8']}),
         colorshort,
-        cssnano,
-        discardcomments,
         focus,
-        nested,
         precss,
         short,
-        size
+        size,
+        autoprefixer({browsers: ['last 5 version', 'ie 8']}),
+        cssnano
     ];
     return gulp.src('src/css/*.css')
         .pipe(postcss(processors))
