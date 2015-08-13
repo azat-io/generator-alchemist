@@ -71,6 +71,10 @@ Write your code in the folder /src/jade/ and it will automatically be compiled i
 
 ### HTML
 
+#### [HTML Hint](https://github.com/bezoerb/gulp-htmlhint)
+
+Validate your HTML code.
+
 ### CSS
 
 ##### [Normalize CSS](https://github.com/necolas/normalize.css)
@@ -319,6 +323,10 @@ to:
 
 ### JavaScript
 
+#### [Uglify](https://github.com/terinjokes/gulp-uglify)
+
+Minify JavaScript files.
+
 ### Images
 
 Upload images to the folder:
@@ -332,15 +340,11 @@ And images will be automatically minify with Gulp plugin [Imagemin](https://gith
 
 ## Author
 
-Azat S.
+Azat S:
 
-Follow me:
-
-[GitHub](https://github.com/azat-io)
-
-[Twitter](https://twitter.com/azat_io)
-
-[FaceBook](https://facebook.com/azatklevec)
+* [GitHub](https://github.com/azat-io)
+* [Twitter](https://twitter.com/azat_io)
+* [FaceBook](https://facebook.com/azatklevec)
 
 ## License
 
