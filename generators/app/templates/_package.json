@@ -1,6 +1,6 @@
 {
   "name": "generator-alchemist",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Development a front-end web app using Gulp and PostCSS",
   "homepage": "https://github.com/azat-io/generator-alchemist",
   "author": {
