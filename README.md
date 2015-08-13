@@ -28,12 +28,6 @@ $ npm install -g gulp
 
 ![](https://github.com/azat-io/generator-alchemist/blob/master/images/alchemist.jpg?raw=true)
 
-Download this repository:
-
-```bash
-$ git clone https://github.com/azat-io/generator-alchemist.git
-```
-
 To install generator-alchemist from npm, run:
 
 ```bash
@@ -46,6 +40,10 @@ Finally, initiate the generator to your project folder:
 $ yo alchemist
 ```
 
+![](https://github.com/azat-io/generator-alchemist/blob/master/images/jade.jpg?raw=true)
+
+Jade language is optional in Alchemist generator. Put Y or N to use it or not.
+
 After installation run gulp
 
 ```bash
@@ -54,7 +52,7 @@ $ gulp
 
 That's all! You can start to work with your project files:
 
-* Write your HTML code in the folder /src/
+* Write your Jade / HTML code in the folder /src/ or /src/jade/
 * Write your CSS code in the folder /src/css/
 * Write your JavaScript code in the folder /src/js/
 * Put your images to the folder /src/images/
@@ -64,6 +62,14 @@ And all of this files will be automatically optimize and paste to your productio
 Thank's for usage!
 
 ## Contents
+
+### Jade (optional)
+
+The use of language Jade is optional. If you want to use it, select the option to install the program.
+
+Write your code in the folder /src/jade/ and it will automatically be compiled into html.
+
+### HTML
 
 ### CSS
 
@@ -310,6 +316,8 @@ to:
     height: 10px;
 }
 ```
+
+### JavaScript
 
 ### Images
 
