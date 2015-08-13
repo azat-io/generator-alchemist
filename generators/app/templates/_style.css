@@ -230,24 +230,112 @@ th {
   padding: 0;
 }
 
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 
 /* 1.1 Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .container {
-  padding: 0 15px;
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
+.container:before,
+.container:after {
+  content: " ";
+  display: table;
+}
+
+.container:after {
+  clear: both;
+}
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+}
+
+.row:after {
+  clear: both;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 @media (min-width: 992px) {
   .container {
     width: 970px;
+  }
+
+  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11 {
+    float: left;
+  }
+
+  .col-12 {
+    width: 100%;
+  }
+
+  .col-11 {
+    width: 91.66666666666666%;
+  }
+
+  .col-10 {
+    width: 83.33333333333334%;
+  }
+
+  .col-9 {
+    width: 75%;
+  }
+
+  .col-8 {
+    width: 66.66666666666666%;
+  }
+
+  .col-7 {
+    width: 58.333333333333336%;
+  }
+
+  .col-6 {
+    width: 50%;
+  }
+
+  .col-5 {
+    width: 41.66666666666667%;
+  }
+
+  .col-4 {
+    width: 33.33333333333333%;
+  }
+
+  .col-3 {
+    width: 25%;
+  }
+
+  .col-2 {
+    width: 16.666666666666664%;
+  }
+
+  .col-1 {
+    width: 8.333333333333332%;
   }
 }
 
@@ -257,75 +345,6 @@ th {
   }
 }
 
-.row {
-  margin: auto -15px;
-}
-
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
-  position: relative;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-
-@media (min-width: 992px) {
-  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
-    float: left;
-  }
-
-  .col-12 {
-    width: 100%;
-  }
-
-  .col-11 {
-    width: 91.66666667%;
-  }
-
-  .col-10 {
-    width: 83.33333333%;
-  }
-
-  .col-9 {
-    width: 75%;
-  }
-
-  .col-8 {
-    width: 66.66666667%;
-  }
-
-  .col-7 {
-    width: 58.33333333%;
-  }
-
-  .col-6 {
-    width: 50%;
-  }
-
-  .col-5 {
-    width: 41.66666667%;
-  }
-  .col-4 {
-    width: 33.33333333%;
-  }
-  .col-3 {
-    width: 25%;
-  }
-
-  .col-2 {
-    width: 16.66666667%;
-  }
-
-  .col-1 {
-    width: 8.33333333%;
-  }
-}
-
-.img-responsive {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
 
 /* 1.2 Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
