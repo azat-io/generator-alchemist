@@ -16,17 +16,11 @@ var uglify = require('gulp-uglify')
 
 gulp.task('default', function() {
   gulp.watch('src/**', function(event) {
-    gulp.run('notify');
     gulp.run('html');
     gulp.run('css');
     gulp.run('js');
     gulp.run('images');
   });
-});
-
-gulp.task('notify', function() {
-  gulp.src('src/*')
-    .pipe(notify('Done!'));
 });
 
 

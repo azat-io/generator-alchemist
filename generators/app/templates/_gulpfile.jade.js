@@ -17,7 +17,6 @@ var uglify = require('gulp-uglify')
 
 gulp.task('default', function() {
   gulp.watch('src/**', function(event) {
-    gulp.run('notify');
     gulp.run('jade');
     gulp.run('postcss');
     gulp.run('js');
