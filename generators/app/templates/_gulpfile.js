@@ -32,11 +32,9 @@ gulp.task('notify', function() {
 // HTML
 
 gulp.task('html', function() {
-  var YOUR_LOCALS = {};
   gulp.src('src/jade/**/*.jade')
     .pipe(jade({
       pretty: true,
-      locals: YOUR_LOCALS
     }))
     .pipe(gulp.dest('dist/'))
 });
@@ -50,7 +48,6 @@ gulp.task('css', function () {
         cssnano,
         discardcomments,
         focus,
-        lost,
         nested,
         precss,
         short,
@@ -59,15 +56,6 @@ gulp.task('css', function () {
     return gulp.src('src/css/*.css')
         .pipe(postcss(processors))
         .pipe(gulp.dest('dist/css/'));
-});
-
-gulp.task('css', function () {
-    var processors = [
-        cssnano,
-    ];
-    return gulp.src('dist/css/*.css')
-        .pipe(postcss(processors))
-        .pipe(gulp.dest('dist/css/*.min.css'));
 });
 
 // JavaScript
