@@ -7,7 +7,6 @@ var gulp = require('gulp');
 var imagemin = require('gulp-imagemin');
 var jade = require('gulp-jade');
 var nested = require('postcss-nested');
-var notify = require('gulp-notify');
 var pngquant = require('imagemin-pngquant');
 var postcss = require('gulp-postcss');
 var precss = require('precss');
@@ -22,11 +21,6 @@ gulp.task('default', function() {
     gulp.run('js');
     gulp.run('images');
   });
-});
-
-gulp.task('notify', function() {
-  gulp.src('src/*')
-    .pipe(notify('Done!'));
 });
 
 
