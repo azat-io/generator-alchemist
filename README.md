@@ -147,11 +147,7 @@ to:
 
 #### [CSS Nano](https://github.com/ben-eb/cssnano)
 
-Minify your CSS code
-
-#### [Discard Comments](https://github.com/ben-eb/postcss-discard-comments)
-
-Discard comments in your CSS files
+Minify your CSS code and discard comments in your CSS files.
 
 #### [Focus](https://github.com/postcss/postcss-focus)
 
@@ -173,48 +169,6 @@ to:
 }
 ```
 
-#### [Nested](https://github.com/postcss/postcss-nested)
-
-Unwrap nested rules like how Sass does it.
-
-from:
-
-```css
-.phone {
-    &_title {
-        width: 500px;
-        @media (max-width: 500px) {
-            width: auto;
-        }
-        body.is_dark & {
-            color: white;
-        }
-    }
-    img {
-        display: block;
-    }
-}
-```
-
-to:
-
-```css
-.phone_title {
-    width: 500px;
-}
-@media (max-width: 500px) {
-    .phone_title {
-        width: auto;
-    }
-}
-body.is_dark .phone_title {
-    color: white;
-}
-.phone img {
-    display: block;
-}
-```
-
 #### [PreCSS](https://github.com/jonathantneal/precss)
 
 Use Sass-like markup in your CSS files. Enjoy a familiar syntax with variables, mixins, conditionals, and other goodies.
@@ -225,18 +179,25 @@ from:
 $blue: #056ef0;
 $column: 200px;
 
-.menu_link {
+header {
   background: $blue;
   width: $column;
+    h1 {
+      font-size: 18px;
+    }
 }
 ```
 
 to:
 
 ```css
-.menu_link {
+.header {
   background: #056ef0;
   width: 200px;
+}
+
+header h1 {
+  font-size: 18px;
 }
 ```
 
