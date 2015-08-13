@@ -5,6 +5,7 @@ var discardcomments = require('postcss-discard-comments');
 var focus = require('postcss-focus');
 var gulp = require('gulp');
 var imagemin = require('gulp-imagemin');
+var jade = require('gulp-jade');
 var nested = require('postcss-nested');
 var notify = require('gulp-notify');
 var pngquant = require('imagemin-pngquant');
@@ -17,8 +18,8 @@ var uglify = require('gulp-uglify')
 gulp.task('default', function() {
   gulp.watch('src/**', function(event) {
     gulp.run('notify');
-    gulp.run('html');
-    gulp.run('css');
+    gulp.run('jade');
+    gulp.run('postcss');
     gulp.run('images');
   });
 });
@@ -28,16 +29,19 @@ gulp.task('notify', function() {
     .pipe(notify('Done!'));
 });
 
-// HTML
+// Jade
 
-gulp.task('html', function() {
+gulp.task('jade', function() {
   gulp.src('src/jade/**/*.jade')
-    .pipe(gulp.dest('dist/'))
+    .pipe(jade({
+      pretty: true,
+    }))
+    .pipe(gulp.dest('src/html/**/*.html'))
 });
 
 // PostCSS
 
-gulp.task('css', function () {
+gulp.task('postcss', function () {
     var processors = [
         autoprefixer({browsers: ['last 5 version', 'ie 8']}),
         colorshort,

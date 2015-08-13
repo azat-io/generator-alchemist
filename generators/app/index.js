@@ -7,21 +7,27 @@ module.exports = yeoman.generators.Base.extend({
   prompting: function () {
     var done = this.async();
 
-    // Have Yeoman greet the user.
     this.log(yosay(
-      'Welcome to the stunning ' + chalk.red('Alchemist') + ' generator!'
+      'Hello, my name is ' + chalk.red('Alchemist') + ' generator! And I would like to help you to start your project!'
     ));
 
-    var prompts = [{
-      type: 'prompt',
-      name: 'appName',
-      message: 'Could you tell me the name of your new project?'
-    }];
+    var prompts = [
+      {
+        type: 'prompt',
+        name: 'appName',
+        message: 'Could you tell me the name of your new project?'
+      },
+      {
+        type: 'confirm',
+        name: 'jadeLang',
+        message: 'Would you like to use Jade?',
+        default: true,
+      }
+    ];
 
     this.prompt(prompts, function (answers) {
       this.appName = answers.appName;
-      // To access props later use this.props.someOption;
-
+      this.jadeLang = answers.jadeLang;
       done();
     }.bind(this));
   },
@@ -35,17 +41,12 @@ module.exports = yeoman.generators.Base.extend({
       this.mkdir('dist/images');
       this.mkdir('dist/js');
       this.mkdir('src');
-      this.mkdir('src/jade');
       this.mkdir('src/css');
       this.mkdir('src/js');
       this.mkdir('src/images');
       this.fs.copy(
         this.templatePath('_package.json'),
         this.destinationPath('package.json')
-      );
-      this.fs.copy(
-        this.templatePath('_gulpfile.js'),
-        this.destinationPath('gulpfile.js')
       );
       this.fs.copy(
         this.templatePath('_npm-debug.log'),
@@ -60,13 +61,25 @@ module.exports = yeoman.generators.Base.extend({
         this.destinationPath('.bowerrc')
       );
       this.fs.copy(
-        this.templatePath('_index.jade'),
-        this.destinationPath('src/jade/style.css')
-      );
-      this.fs.copy(
         this.templatePath('_style.css'),
         this.destinationPath('src/css/style.css')
       );
+      if (this.jadeLang == true) {
+        this.mkdir('src/jade');
+        this.fs.copy(
+          this.templatePath('_index.jade'),
+          this.destinationPath('src/jade/index.jade')
+        );
+        this.fs.copy(
+          this.templatePath('_gulpfile.jade.js'),
+          this.destinationPath('gulpfile.js')
+        );
+      } else {
+        this.fs.copy(
+          this.templatePath('_gulpfile.js'),
+          this.destinationPath('gulpfile.js')
+        );
+      }
     },
 
     projectfiles: function () {
