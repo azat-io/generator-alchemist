@@ -24,7 +24,7 @@ $ npm install -g yo
 $ npm install -g gulp
 ```
 
-### Usage
+## Usage
 
 ![](https://github.com/azat-io/generator-alchemist/blob/master/images/alchemist.jpg?raw=true)
 
