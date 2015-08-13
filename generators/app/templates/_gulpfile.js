@@ -19,6 +19,7 @@ gulp.task('default', function() {
     gulp.run('notify');
     gulp.run('html');
     gulp.run('css');
+    gulp.run('js');
     gulp.run('images');
   });
 });

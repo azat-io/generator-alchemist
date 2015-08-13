@@ -20,6 +20,7 @@ gulp.task('default', function() {
     gulp.run('notify');
     gulp.run('jade');
     gulp.run('postcss');
+    gulp.run('js');
     gulp.run('images');
   });
 });
@@ -36,7 +37,7 @@ gulp.task('jade', function() {
     .pipe(jade({
       pretty: true,
     }))
-    .pipe(gulp.dest('src/html/**/*.html'))
+    .pipe(gulp.dest('src/'))
 });
 
 // PostCSS
