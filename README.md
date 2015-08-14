@@ -1,5 +1,6 @@
 # generator-alchemist
 
+[![npm version](https://badge.fury.io/js/generator-alchemist.svg)](http://badge.fury.io/js/generator-alchemist)
 [![Build Status](https://secure.travis-ci.org/azat-io/generator-alchemist.png?branch=master)](https://travis-ci.org/azat-io/generator-alchemist)
 [![Dependency Status](https://david-dm.org/azat-io/generator-alchemist.svg)](https://david-dm.org/azat-io/generator-alchemist)
 
