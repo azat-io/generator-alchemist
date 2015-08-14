@@ -169,6 +169,30 @@ to:
 }
 ```
 
+#### [Media Minmax](https://github.com/postcss/postcss-media-minmax)
+
+Plugin for minify min-width and max-width CSS properties.
+
+from:
+
+```css
+@media screen and (width >= 500px) and (width <= 1200px) {
+  .bar {
+    display: block;
+  }
+}
+```
+
+to:
+
+```css
+@media screen and (min-width: 500px) and (max-width: 1200px) {
+  .bar {
+    display: block;
+  }
+}
+```
+
 #### [PreCSS](https://github.com/jonathantneal/precss)
 
 Use Sass-like markup in your CSS files. Enjoy a familiar syntax with variables, mixins, conditionals, and other goodies.
@@ -191,7 +215,7 @@ header {
 to:
 
 ```css
-.header {
+header {
   background: #056ef0;
   width: 200px;
 }
