@@ -345,6 +345,11 @@ th {
   }
 }
 
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 /* 1.2 Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
