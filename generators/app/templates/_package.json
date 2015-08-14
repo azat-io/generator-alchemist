@@ -27,6 +27,7 @@
     "imagemin-pngquant": "^4.1.2",
     "postcss-color-short": "^0.1.0",
     "postcss-focus": "^0.1.1",
+    "postcss-media-minmax": "^1.2.0",
     "postcss-short": "^0.3.0",
     "postcss-size": "^0.2.0",
     "precss": "^0.3.0"

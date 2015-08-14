@@ -5,6 +5,7 @@ var focus = require('postcss-focus');
 var gulp = require('gulp');
 var htmlhint = require('gulp-htmlhint');
 var imagemin = require('gulp-imagemin');
+var mediaminmax = require('postcss-media-minmax');
 var pngquant = require('imagemin-pngquant');
 var postcss = require('gulp-postcss');
 var precss = require('precss');
@@ -43,7 +44,7 @@ gulp.task('css', function () {
     var processors = [
         colorshort,
         focus,
-        nested,
+        mediaminmax,
         precss,
         short,
         size,
