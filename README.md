@@ -1,10 +1,10 @@
 # generator-alchemist
 
+<img align="right" width="110" height="150" src="https://github.com/azat-io/generator-alchemist/blob/master/images/logo.jpg?raw=true" alt="">
+
 [![npm version](https://badge.fury.io/js/generator-alchemist.svg)](http://badge.fury.io/js/generator-alchemist)
 [![Build Status](https://secure.travis-ci.org/azat-io/generator-alchemist.png?branch=master)](https://travis-ci.org/azat-io/generator-alchemist)
 [![Dependency Status](https://david-dm.org/azat-io/generator-alchemist.svg)](https://david-dm.org/azat-io/generator-alchemist)
-
-<img align="right" width="110" height="150" src="https://github.com/azat-io/generator-alchemist/blob/master/images/logo.jpg?raw=true" alt="">
 
 [Yeoman](https://github.com/yeoman/yeoman) generator for development a front-end web app using [Gulp](https://github.com/gulpjs/gulp) and [PostCSS](https://github.com/postcss/postcss) for the build process.
 
@@ -29,8 +29,6 @@ $ npm install -g gulp
 ```
 
 ## Usage
-
-![](https://github.com/azat-io/generator-alchemist/blob/master/images/alchemist.jpg?raw=true)
 
 To install generator-alchemist from npm, run:
 
@@ -66,6 +64,8 @@ And all of this files will be automatically optimize and paste to your productio
 Thank's for usage!
 
 ## Contents
+
+![](https://github.com/azat-io/generator-alchemist/blob/master/images/alchemist.jpg?raw=true)
 
 ### Jade (optional)
 
