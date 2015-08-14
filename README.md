@@ -1,4 +1,7 @@
-# generator-alchemist [![Build Status](https://secure.travis-ci.org/azat-io/generator-alchemist.png?branch=master)](https://travis-ci.org/azat-io/generator-alchemist)
+# generator-alchemist
+
+[![Build Status](https://secure.travis-ci.org/azat-io/generator-alchemist.png?branch=master)](https://travis-ci.org/azat-io/generator-alchemist)
+[![Dependency Status](https://david-dm.org/azat-io/generator-alchemist.svg)](https://david-dm.org/azat-io/generator-alchemist)
 
 <img align="right" width="110" height="150" src="https://github.com/azat-io/generator-alchemist/blob/master/images/logo.jpg?raw=true" alt="">
 
