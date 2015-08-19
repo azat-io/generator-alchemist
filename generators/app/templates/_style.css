@@ -373,6 +373,17 @@ th {
   height: auto;
 }
 
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " ";
+}
+
+.clearfix:after {
+  clear:both;
+}
+
+
 /* 1.2 Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
