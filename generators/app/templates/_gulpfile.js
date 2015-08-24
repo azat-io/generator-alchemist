@@ -1,6 +1,7 @@
 var autoprefixer = require('autoprefixer-core');
 var byebye = require('css-byebye');
 var center = require('postcss-center');
+var clearfix = require('postcss-clearfix');
 var colorshort = require('postcss-color-short');
 var cssnano = require('cssnano');
 var focus = require('postcss-focus');
@@ -52,6 +53,7 @@ gulp.task('css', function () {
         precss,
         short,
         size,
+        clearfix,
         byebye,
         pxtorem,
         autoprefixer({browsers: ['last 5 version', 'ie 8']}),
