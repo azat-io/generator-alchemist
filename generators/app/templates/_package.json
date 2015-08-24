@@ -12,7 +12,6 @@
     "gulp-uglify": "^1.2.0",
     "imagemin-pngquant": "^4.1.2",
     "postcss-center": "^1.0.0",
-    "postcss-clearfix": "^0.2.0",
     "postcss-color-short": "^0.1.0",
     "postcss-focus": "^0.1.1",
     "postcss-media-minmax": "^1.2.0",
