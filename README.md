@@ -54,7 +54,7 @@ $ gulp
 
 That's all! You can start to work with your project files:
 
-* Write your Jade / HTML code in the folder /src/ or /src/jade/
+* Write your Jade / HTML code in the folder /src/jade/ or /src/html/
 * Write your CSS code in the folder /src/css/
 * Write your JavaScript code in the folder /src/js/
 * Put your images to the folder /src/images/
@@ -304,7 +304,7 @@ header h1 {
 
 etc.
 
-#### PxtoRem(https://github.com/cuth/postcss-pxtorem)
+#### [PxtoRem](https://github.com/cuth/postcss-pxtorem)
 
 A plugin for PostCSS that generates rem units from pixel units.
 
