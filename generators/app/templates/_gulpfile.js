@@ -9,6 +9,7 @@ var mediaminmax = require('postcss-media-minmax');
 var pngquant = require('imagemin-pngquant');
 var postcss = require('gulp-postcss');
 var precss = require('precss');
+var pxtorem = require('postcss-pxtorem');
 var short = require('postcss-short');
 var size = require('postcss-size');
 var uglify = require('gulp-uglify')
@@ -48,6 +49,7 @@ gulp.task('css', function () {
         precss,
         short,
         size,
+        pxtorem,
         autoprefixer({browsers: ['last 5 version', 'ie 8']}),
         cssnano
     ];
