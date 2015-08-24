@@ -1,4 +1,5 @@
 var autoprefixer = require('autoprefixer-core');
+var byebye = require('css-byebye');
 var colorshort = require('postcss-color-short');
 var cssnano = require('cssnano');
 var focus = require('postcss-focus');
@@ -10,6 +11,7 @@ var mediaminmax = require('postcss-media-minmax');
 var pngquant = require('imagemin-pngquant');
 var postcss = require('gulp-postcss');
 var precss = require('precss');
+var pxtorem = require('postcss-pxtorem');
 var short = require('postcss-short');
 var size = require('postcss-size');
 var uglify = require('gulp-uglify')
@@ -63,6 +65,8 @@ gulp.task('postcss', function () {
         precss,
         short,
         size,
+        byebye,
+        pxtorem,
         autoprefixer({browsers: ['last 5 version', 'ie 8']}),
         cssnano
     ];
