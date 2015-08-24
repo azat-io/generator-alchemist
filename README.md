@@ -152,6 +152,50 @@ to:
 }
 ```
 
+#### [Clearfix](https://github.com/seaneking/postcss-clearfix)
+
+Adds fix and fix-legacy attributes to the clear property, for self-clearing of children
+
+from:
+
+```css
+.foo {
+  clear: fix;
+}
+
+.bar {
+  clear: fix-legacy;
+}
+```
+
+to:
+
+```css
+.foo:after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.bar {
+    clear: fix-legacy;
+}
+
+.bar:before,
+.bar:after {
+  content: '';
+  display: table;
+}
+
+.bar:after {
+  clear: both;
+}
+
+.bar {
+  zoom: 1;
+}
+```
+
 #### [Color Short](https://github.com/andrepolischuk/postcss-color-short)
 
 Short CSS colors
