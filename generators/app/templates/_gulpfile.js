@@ -1,5 +1,6 @@
 var autoprefixer = require('autoprefixer-core');
 var byebye = require('css-byebye');
+var center = require('postcss-center');
 var clearfix = require('postcss-clearfix');
 var colorshort = require('postcss-color-short');
 var cssnano = require('cssnano');
@@ -47,6 +48,7 @@ gulp.task('css', function () {
     var processors = [
         colorshort,
         focus,
+        center,
         mediaminmax,
         precss,
         short,
