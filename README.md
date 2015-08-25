@@ -19,13 +19,13 @@ To use Alchemist Generator you need to set a few things:
 #### Yo:
 
 ```bash
-$ npm install -g yo
+$ sudo npm install -g yo
 ```
 
 #### Gulp:
 
 ```bash
-$ npm install -g gulp
+$ sudo npm install -g gulp
 ```
 
 ## Usage
@@ -33,7 +33,7 @@ $ npm install -g gulp
 To install generator-alchemist from npm, run:
 
 ```bash
-$ npm install -g generator-alchemist
+$ sudo npm install -g generator-alchemist
 ```
 
 Finally, initiate the generator to your project folder:
@@ -122,10 +122,6 @@ a {
   display: flex;
 }
 ```
-
-#### [ByeBye](https://github.com/AoDev/css-byebye)
-
-Removes the CSS rules that you don’t want
 
 #### [Center](https://github.com/jedmao/postcss-center)
 
@@ -224,7 +220,11 @@ to:
 
 #### [CSS Nano](https://github.com/ben-eb/cssnano)
 
-Minify your CSS code and discard comments in your CSS files.
+Minify your CSS code
+
+#### [Discard Comments](https://github.com/ben-eb/postcss-discard-comments)
+
+Discard comments in your CSS files
 
 #### [Focus](https://github.com/postcss/postcss-focus)
 
