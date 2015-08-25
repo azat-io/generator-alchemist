@@ -1,9 +1,9 @@
 var autoprefixer = require('autoprefixer-core');
-var byebye = require('css-byebye');
 var center = require('postcss-center');
 var clearfix = require('postcss-clearfix');
 var colorshort = require('postcss-color-short');
 var cssnano = require('cssnano');
+var discardcomments = require('postcss-discard-comments');
 var focus = require('postcss-focus');
 var gulp = require('gulp');
 var htmlhint = require('gulp-htmlhint');
@@ -54,8 +54,8 @@ gulp.task('css', function () {
         short,
         size,
         clearfix,
-        byebye,
         pxtorem,
+        discardcomments,
         autoprefixer({browsers: ['last 5 version', 'ie 8']}),
         cssnano
     ];
