@@ -107,19 +107,34 @@ Parse CSS and add vendor prefixes to CSS
 from:
 
 ```css
-a {
-  display: flex;
+:fullscreen a {
+    display: flex
 }
 ```
 
 to:
 
 ```css
-a {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+:-webkit-full-screen a {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex
+}
+
+:-moz-full-screen a {
+    display: flex
+}
+
+:-ms-fullscreen a {
+    display: -ms-flexbox;
+    display: flex
+}
+
+:fullscreen a {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex
 }
 ```
 
