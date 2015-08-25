@@ -424,9 +424,16 @@ And images will be automatically minify with Gulp plugin [Imagemin](https://gith
 
 Azat S:
 
-* [GitHub](https://github.com/azat-io)
-* [Twitter](https://twitter.com/azat_io)
-* [FaceBook](https://facebook.com/azatklevec)
+<a href="https://github.com/azat-io">
+  <img src="https://github.com/azat-io/generator-alchemist/blob/master/images/github.png" style="float:right">
+</a>
+<a href="https://twitter.com/azat_io">
+  <img src="https://github.com/azat-io/generator-alchemist/blob/master/images/twitter.png" style="float:right">
+</a>
+<a href="https://facebook.com/azatklevec">
+  <img src="https://github.com/azat-io/generator-alchemist/blob/master/images/facebook.png" style="float:right">
+</a>
+
 
 ## License
 
