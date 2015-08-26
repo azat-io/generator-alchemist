@@ -44,7 +44,7 @@ gulp.task('html', function() {
 
 // PostCSS
 
-gulp.task('css', function () {
+gulp.task('postcss', function () {
     var processors = [
         colorshort,
         focus,
