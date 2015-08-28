@@ -3,6 +3,7 @@ var center = require('postcss-center');
 var clearfix = require('postcss-clearfix');
 var colorshort = require('postcss-color-short');
 var cssnano = require('cssnano');
+var cssnext = require("cssnext")
 var discardcomments = require('postcss-discard-comments');
 var focus = require('postcss-focus');
 var gulp = require('gulp');
@@ -56,7 +57,7 @@ gulp.task('postcss', function () {
         clearfix,
         pxtorem,
         discardcomments,
-        autoprefixer({browsers: ['last 5 version', 'ie 8']}),
+        cssnext,
         cssnano
     ];
     return gulp.src('src/css/*.css')
