@@ -10,7 +10,6 @@ var gulp = require('gulp');
 var htmlhint = require('gulp-htmlhint');
 var imagemin = require('gulp-imagemin');
 var jade = require('gulp-jade');
-var mediaminmax = require('postcss-media-minmax');
 var pngquant = require('imagemin-pngquant');
 var postcss = require('gulp-postcss');
 var precss = require('precss');
@@ -37,7 +36,6 @@ gulp.task('default', function() {
   });
 });
 
-
 // Jade
 
 gulp.task('jade', function() {
@@ -48,7 +46,6 @@ gulp.task('jade', function() {
     .pipe(gulp.dest('src/html/'))
 });
 
-
 // HTML
 
 gulp.task('html', function() {
@@ -56,7 +53,6 @@ gulp.task('html', function() {
       .pipe(htmlhint())
     .pipe(gulp.dest('dist/'))
 });
-
 
 // PostCSS
 

@@ -9,7 +9,6 @@ var focus = require('postcss-focus');
 var gulp = require('gulp');
 var htmlhint = require('gulp-htmlhint');
 var imagemin = require('gulp-imagemin');
-var mediaminmax = require('postcss-media-minmax');
 var pngquant = require('imagemin-pngquant');
 var postcss = require('gulp-postcss');
 var precss = require('precss');
@@ -33,7 +32,6 @@ gulp.task('default', function() {
   });
 });
 
-
 // HTML
 
 gulp.task('html', function() {
@@ -41,7 +39,6 @@ gulp.task('html', function() {
       .pipe(htmlhint())
     .pipe(gulp.dest('dist/'))
 });
-
 
 // PostCSS
 

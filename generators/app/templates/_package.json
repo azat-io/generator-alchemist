@@ -16,7 +16,6 @@
     "postcss-color-short": "^0.2.0",
     "postcss-discard-comments": "^1.2.1",
     "postcss-focus": "^1.0.0",
-    "postcss-media-minmax": "^1.2.0",
     "postcss-pxtorem": "^3.0.0",
     "postcss-short": "^0.3.0",
     "postcss-size": "^1.0.0",
