@@ -237,6 +237,92 @@ to:
 
 Minify your CSS code
 
+#### [CSS Next](https://github.com/cssnext/cssnext)
+
+Use tomorrow's CSS syntax, today. Some examples:
+
+CSS Custom Properties for cascading variables.
+
+from:
+
+```css
+:root {
+  --color: red;
+}
+
+div {
+  color: var(--color);
+}
+```
+
+to:
+
+div {
+  color: red;
+}
+
+Transform W3C CSS Custom Media Queries to more compatible CSS.
+
+from:
+
+```css
+@custom-media --small-viewport (max-width: 30em);
+
+@media (--small-viewport) {
+  /* styles for small viewport */
+}
+```
+
+to:
+
+```css
+@media (max-width: 30em) {
+  /* styles for small viewport */
+}
+```
+
+Writing simple and graceful media queries.
+
+from:
+
+```css
+@media screen and (width >= 500px) and (width <= 1200px) {
+  .bar {
+    display: block;
+  }
+}
+```
+
+to:
+
+```css
+@media screen and (min-width: 500px) and (max-width: 1200px) {
+  .bar {
+    display: block;
+  }
+}
+```
+
+Transform W3C CSS color function to more compatible CSS.
+
+from:
+
+```css
+body {
+  background: color(red a(90%))
+}
+```
+
+to:
+
+```css
+body {
+  background: rgba(255, 0, 0, 0.9)
+}
+```
+
+And much more. A full list of features you can found [here](http://cssnext.io/usage/).
+
 #### [Discard Comments](https://github.com/ben-eb/postcss-discard-comments)
 
 Discard comments in your CSS files
@@ -258,30 +344,6 @@ to:
 ```css
 .button:hover, .button:focus {
   background: red;
-}
-```
-
-#### [Media Minmax](https://github.com/postcss/postcss-media-minmax)
-
-Plugin for minify min-width and max-width CSS properties.
-
-from:
-
-```css
-@media screen and (width >= 500px) and (width <= 1200px) {
-  .bar {
-    display: block;
-  }
-}
-```
-
-to:
-
-```css
-@media screen and (min-width: 500px) and (max-width: 1200px) {
-  .bar {
-    display: block;
-  }
 }
 ```
 
