@@ -61,7 +61,6 @@ gulp.task('postcss', function () {
         colorshort,
         focus,
         center,
-        mediaminmax,
         precss,
         short,
         size,
@@ -69,6 +68,7 @@ gulp.task('postcss', function () {
         pxtorem,
         discardcomments,
         cssnext,
+        autoprefixer({ browsers: ['last 2 version'] }),
         cssnano
     ];
     return gulp.src('src/css/*.css')

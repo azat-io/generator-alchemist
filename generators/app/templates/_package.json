@@ -1,8 +1,9 @@
 {
   "private": true,
   "devDependencies": {
-    "cssnano": "^2.1.1",
-    "cssnext": "^2.6.1",
+    "autoprefixer-core": "^5.2.1",
+    "cssnano": "^2.6.1",
+    "cssnext": "^1.8.4",
     "gulp": "^3.9.0",
     "gulp-htmlhint": "^0.3.0",
     "gulp-imagemin": "^2.3.0",
