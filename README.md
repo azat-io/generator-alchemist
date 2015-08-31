@@ -233,6 +233,10 @@ to:
 }
 ```
 
+#### [CSS Mqpacker](https://github.com/hail2u/node-css-mqpacker)
+
+Pack same CSS media query rules into one media query rule.
+
 #### [CSS Nano](https://github.com/ben-eb/cssnano)
 
 Minify your CSS code
