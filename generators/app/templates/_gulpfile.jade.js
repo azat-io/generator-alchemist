@@ -2,8 +2,9 @@ var autoprefixer = require('autoprefixer-core');
 var center = require('postcss-center');
 var clearfix = require('postcss-clearfix');
 var colorshort = require('postcss-color-short');
+var cssmqpacker = require('css-mqpacker');
 var cssnano = require('cssnano');
-var cssnext = require("cssnext")
+var cssnext = require("cssnext");
 var discardcomments = require('postcss-discard-comments');
 var focus = require('postcss-focus');
 var gulp = require('gulp');
@@ -68,6 +69,7 @@ gulp.task('postcss', function () {
         pxtorem,
         discardcomments,
         cssnext,
+        cssmqpacker,
         autoprefixer({ browsers: ['last 2 version'] }),
         cssnano
     ];
