@@ -1,6 +1,6 @@
 {
   "name": "generator-alchemist",
-  "version": "2.1.1",
+  "version": "2.2.0",
   "description": "Yeoman generator for development a front-end web app using Gulp and PostCSS",
   "license": "MIT",
   "main": "app/index.js",
