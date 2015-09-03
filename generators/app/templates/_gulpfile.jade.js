@@ -2,6 +2,7 @@ var autoprefixer = require('autoprefixer-core');
 var center = require('postcss-center');
 var clearfix = require('postcss-clearfix');
 var colorshort = require('postcss-color-short');
+var connect = require('gulp-connect');
 var cssmqpacker = require('css-mqpacker');
 var cssnano = require('cssnano');
 var cssnext = require("cssnext");
@@ -11,6 +12,7 @@ var gulp = require('gulp');
 var htmlhint = require('gulp-htmlhint');
 var imagemin = require('gulp-imagemin');
 var jade = require('gulp-jade');
+var livereload = require('gulp-livereload');
 var pngquant = require('imagemin-pngquant');
 var postcss = require('gulp-postcss');
 var precss = require('precss');
@@ -20,6 +22,7 @@ var size = require('postcss-size');
 var uglify = require('gulp-uglify')
 
 gulp.task('default', function() {
+  gulp.run('server');
   gulp.watch('src/jade/**', function(event) {
     gulp.run('jade');
   });
@@ -53,6 +56,7 @@ gulp.task('html', function() {
   gulp.src('src/html/**/*.html')
       .pipe(htmlhint())
     .pipe(gulp.dest('dist/'))
+    .pipe(connect.reload());
 });
 
 // PostCSS
@@ -75,7 +79,8 @@ gulp.task('postcss', function () {
     ];
     return gulp.src('src/css/*.css')
         .pipe(postcss(processors))
-        .pipe(gulp.dest('dist/css/'));
+        .pipe(gulp.dest('dist/css/'))
+        .pipe(connect.reload());
 });
 
 // JavaScript
@@ -83,7 +88,8 @@ gulp.task('postcss', function () {
 gulp.task('js', function () {
     return gulp.src('src/js/*')
           .pipe(uglify())
-        .pipe(gulp.dest('dist/js'));
+        .pipe(gulp.dest('dist/js'))
+        .pipe(connect.reload());;
 });
 
 // Image files
@@ -95,5 +101,15 @@ gulp.task('images', function () {
             svgoPlugins: [{removeViewBox: false}],
             use: [pngquant()]
         }))
-        .pipe(gulp.dest('dist/images'));
+        .pipe(gulp.dest('dist/images'))
+        .pipe(connect.reload());
+});
+
+// Server
+
+gulp.task('server', function() {
+  connect.server({
+    root: 'dist',
+    livereload: true
+  });
 });
