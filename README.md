@@ -500,10 +500,17 @@ Upload images to the folder:
 
 And images will be automatically minify with Gulp plugin [Imagemin](https://github.com/sindresorhus/gulp-imagemin) and puts to the folder /dist/images/
 
+### Server
+
+You can use local webserver (with Livereload) here:
+
+```bash
+http://localhost:8080
+```
 
 ## Author
 
-Azat S:
+Azat S.
 
 <a href="https://github.com/azat-io">
   <img src="https://github.com/azat-io/generator-alchemist/blob/master/images/github.png" style="float:right">
