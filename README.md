@@ -513,13 +513,13 @@ http://localhost:8080
 Azat S.
 
 <a href="https://github.com/azat-io">
-  <img src="https://github.com/azat-io/generator-alchemist/blob/master/images/github.png" style="float:right">
+  <img src="https://raw.githubusercontent.com/azat-io/generator-alchemist/master/images/github.png" style="float:right">
 </a>
 <a href="https://twitter.com/azat_io">
-  <img src="https://github.com/azat-io/generator-alchemist/blob/master/images/twitter.png" style="float:right">
+  <img src="https://raw.githubusercontent.com/azat-io/generator-alchemist/master/images/twitter.png" style="float:right">
 </a>
 <a href="https://facebook.com/azatklevec">
-  <img src="https://github.com/azat-io/generator-alchemist/blob/master/images/facebook.png" style="float:right">
+  <img src="https://raw.githubusercontent.com/azat-io/generator-alchemist/master/images/facebook.png" style="float:right">
 </a>
 
 
