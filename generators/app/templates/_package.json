@@ -1,7 +1,7 @@
 {
   "private": true,
   "devDependencies": {
-    "autoprefixer-core": "^5.2.1",
+    "autoprefixer-core": "^6.0.0",
     "css-mqpacker": "^4.0.0",
     "cssnano": "^2.6.1",
     "cssnext": "^1.8.4",
