@@ -1,4 +1,4 @@
-var autoprefixer = require('autoprefixer-core');
+var autoprefixer = require('autoprefixer');
 var center = require('postcss-center');
 var clearfix = require('postcss-clearfix');
 var colorshort = require('postcss-color-short');
