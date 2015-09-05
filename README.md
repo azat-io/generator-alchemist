@@ -327,10 +327,6 @@ body {
 
 And much more. A full list of features you can found [here](http://cssnext.io/usage/).
 
-#### [Discard Comments](https://github.com/ben-eb/postcss-discard-comments)
-
-Discard comments in your CSS files
-
 #### [Focus](https://github.com/postcss/postcss-focus)
 
 Add :focus selector to every :hover
