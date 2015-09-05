@@ -9,10 +9,9 @@ var cssnext = require("cssnext");
 var focus = require('postcss-focus');
 var gulp = require('gulp');
 var htmlhint = require('gulp-htmlhint');
-var imagemin = require('gulp-imagemin');
+var imageop = require('gulp-image-optimization');
 var jade = require('gulp-jade');
 var livereload = require('gulp-livereload');
-var pngquant = require('imagemin-pngquant');
 var postcss = require('gulp-postcss');
 var precss = require('precss');
 var pxtorem = require('postcss-pxtorem');
@@ -92,15 +91,12 @@ gulp.task('js', function () {
 
 // Image files
 
-gulp.task('images', function () {
-    return gulp.src('src/images/*')
-        .pipe(imagemin({
-            progressive: true,
-            svgoPlugins: [{removeViewBox: false}],
-            use: [pngquant()]
-        }))
-        .pipe(gulp.dest('dist/images'))
-        .pipe(connect.reload());
+gulp.task('images', function(cb) {
+    gulp.src(['src/images/**/*.png','src/images/**/*.jpg','src/images/**/*.gif','src/images/**/*.jpeg']).pipe(imageop({
+        optimizationLevel: 5,
+        progressive: true,
+        interlaced: true
+    })).pipe(gulp.dest('dist/images')).on('end', cb).on('error', cb);
 });
 
 // Server
