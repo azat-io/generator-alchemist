@@ -6,7 +6,6 @@ var connect = require('gulp-connect');
 var cssmqpacker = require('css-mqpacker');
 var cssnano = require('cssnano');
 var cssnext = require("cssnext");
-var discardcomments = require('postcss-discard-comments');
 var focus = require('postcss-focus');
 var gulp = require('gulp');
 var htmlhint = require('gulp-htmlhint');
@@ -71,7 +70,6 @@ gulp.task('postcss', function () {
         size,
         clearfix,
         pxtorem,
-        discardcomments,
         cssnext,
         cssmqpacker,
         autoprefixer({ browsers: ['last 2 version'] }),
