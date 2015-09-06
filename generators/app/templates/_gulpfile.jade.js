@@ -52,7 +52,7 @@ gulp.task('jade', function() {
 
 gulp.task('html', function() {
   gulp.src('src/html/**/*.html')
-      .pipe(htmlhint())
+    .pipe(htmlhint())
     .pipe(gulp.dest('dist/'))
     .pipe(connect.reload());
 });
@@ -60,43 +60,44 @@ gulp.task('html', function() {
 // PostCSS
 
 gulp.task('postcss', function () {
-    var processors = [
-        colorshort,
-        focus,
-        center,
-        precss,
-        short,
-        size,
-        clearfix,
-        pxtorem,
-        cssnext,
-        cssmqpacker,
-        autoprefixer({ browsers: ['last 2 version'] }),
-        cssnano
-    ];
-    return gulp.src('src/css/*.css')
-        .pipe(postcss(processors))
-        .pipe(gulp.dest('dist/css/'))
-        .pipe(connect.reload());
+  var processors = [
+    colorshort,
+    focus,
+    center,
+    precss,
+    short,
+    size,
+    clearfix,
+    pxtorem,
+    cssnext,
+    cssmqpacker,
+    autoprefixer({ browsers: ['last 2 version'] }),
+    cssnano
+  ];
+  return gulp.src('src/css/*.css')
+    .pipe(postcss(processors))
+    .pipe(gulp.dest('dist/css/'))
+    .pipe(connect.reload());
 });
 
 // JavaScript
 
 gulp.task('js', function () {
-    return gulp.src('src/js/*')
-          .pipe(uglify())
-        .pipe(gulp.dest('dist/js'))
-        .pipe(connect.reload());;
+  return gulp.src('src/js/*')
+    .pipe(uglify())
+    .pipe(gulp.dest('dist/js'))
+    .pipe(connect.reload());;
 });
 
 // Image files
 
 gulp.task('images', function(cb) {
-    gulp.src(['src/images/**/*.png','src/images/**/*.jpg','src/images/**/*.gif','src/images/**/*.jpeg']).pipe(imageop({
-        optimizationLevel: 5,
-        progressive: true,
-        interlaced: true
-    })).pipe(gulp.dest('dist/images')).on('end', cb).on('error', cb);
+  gulp.src(['src/images/**/*.png','src/images/**/*.jpg','src/images/**/*.gif','src/images/**/*.jpeg']).pipe(imageop({
+      optimizationLevel: 5,
+      progressive: true,
+      interlaced: true
+  }))
+  .pipe(gulp.dest('dist/images')).on('end', cb).on('error', cb);
 });
 
 // Server
