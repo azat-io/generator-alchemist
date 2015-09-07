@@ -239,7 +239,7 @@ Pack same CSS media query rules into one media query rule.
 
 #### [CSS Nano](https://github.com/ben-eb/cssnano)
 
-Minify your CSS code
+Best way to minify your CSS code
 
 #### [CSS Next](https://github.com/cssnext/cssnext)
 
@@ -494,7 +494,7 @@ Upload images to the folder:
 /src/images/
 ```
 
-And images will be automatically minify with Gulp plugin [Imagemin](https://github.com/sindresorhus/gulp-imagemin) and puts to the folder /dist/images/
+And images will be automatically minify with Gulp plugin [Image Optimization](https://github.com/firetix/gulp-image-optimization) and puts to the folder /dist/images/
 
 ### Server
 
