@@ -1,4 +1,5 @@
 var autoprefixer = require('autoprefixer');
+var batch = require('gulp-batch');
 var center = require('postcss-center');
 var clearfix = require('postcss-clearfix');
 var colorshort = require('postcss-color-short');
@@ -16,7 +17,8 @@ var precss = require('precss');
 var pxtorem = require('postcss-pxtorem');
 var short = require('postcss-short');
 var size = require('postcss-size');
-var uglify = require('gulp-uglify')
+var uglify = require('gulp-uglify');
+var watch = require('gulp-watch');
 
 gulp.task('default', function() {
   gulp.run('server');
@@ -29,9 +31,9 @@ gulp.task('default', function() {
   gulp.watch('src/js/**', function(event) {
     gulp.run('js');
   });
-  gulp.watch('dist/images/**', function(event) {
-    gulp.run('images');
-  });
+  gulp.watch('src/images/**/*', batch(function (events, done) {
+      gulp.start('images', done);
+  }));
 });
 
 // HTML
