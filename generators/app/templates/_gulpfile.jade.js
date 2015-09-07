@@ -1,6 +1,7 @@
 var autoprefixer = require('autoprefixer');
 var batch = require('gulp-batch');
 var center = require('postcss-center');
+var clean = require('gulp-clean');
 var clearfix = require('postcss-clearfix');
 var colorshort = require('postcss-color-short');
 var connect = require('gulp-connect');
@@ -100,6 +101,7 @@ gulp.task('images', function(cb) {
     progressive: true,
     interlaced: true
   }))
+  .pipe(clean())
   .pipe(gulp.dest('dist/images')).on('end', cb).on('error', cb);
 });
 
