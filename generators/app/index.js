@@ -13,11 +13,6 @@ module.exports = yeoman.generators.Base.extend({
 
     var prompts = [
       {
-        type: 'prompt',
-        name: 'appName',
-        message: 'Could you tell me the name of your new project?'
-      },
-      {
         type: 'confirm',
         name: 'jadeLang',
         message: 'Would you like to use Jade?',
