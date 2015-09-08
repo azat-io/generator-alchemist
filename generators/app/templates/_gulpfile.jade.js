@@ -102,7 +102,8 @@ gulp.task('images', function(cb) {
     interlaced: true
   }))
   .pipe(clean())
-  .pipe(gulp.dest('dist/images')).on('end', cb).on('error', cb);
+  .pipe(gulp.dest('dist/images')).on('end', cb).on('error', cb)
+  .pipe(connect.reload());
 });
 
 // Server
