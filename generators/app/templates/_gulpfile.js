@@ -77,7 +77,7 @@ gulp.task('js', function () {
 // Image files
 
 gulp.task('images', function(cb) {
-  gulp.src(['src/images/**/*.png','src/images/**/*.jpg','src/images/**/*.gif','src/images/**/*.jpeg'])
+  gulp.src(['src/images/**/*'])
   .pipe(imageop({
     optimizationLevel: 5,
     progressive: true,
