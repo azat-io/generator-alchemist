@@ -28,6 +28,12 @@ $ sudo npm install -g yo
 $ sudo npm install -g gulp
 ```
 
+#### BrowserSync:
+
+```bash
+$ sudo npm install -g browser-sync
+```
+
 ## Usage
 
 To install generator-alchemist from npm, run:
@@ -473,10 +479,10 @@ And images will be automatically minify with Gulp plugin [Image Optimization](ht
 
 ### Server
 
-You can use local webserver (with Livereload) here:
+You can use local webserver with [BrowserSync](https://github.com/Browsersync/browser-sync) here:
 
 ```bash
-http://localhost:8080
+http://localhost:3000
 ```
 
 ## Author
