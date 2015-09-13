@@ -138,31 +138,6 @@ to:
 }
 ```
 
-#### [Center](https://github.com/jedmao/postcss-center)
-
-Centering elements in CSS
-
-from:
-
-```css
-.foo {
-  top: center;
-  left: center;
-}
-```
-
-to:
-
-```css
-.foo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%)
-}
-```
-
 #### [Clearfix](https://github.com/seaneking/postcss-clearfix)
 
 Adds fix and fix-legacy attributes to the clear property, for self-clearing of children
