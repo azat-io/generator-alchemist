@@ -20,8 +20,7 @@ var size = require('postcss-size');
 var uglify = require('gulp-uglify');
 var watch = require('gulp-watch');
 
-gulp.task('default', function() {
-  gulp.run('server');
+gulp.task('default', ['server'], function() {
   gulp.watch('src/jade/**', function(event) {
     gulp.run('jade');
   });
