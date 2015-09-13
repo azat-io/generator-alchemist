@@ -1,7 +1,6 @@
 var autoprefixer = require('autoprefixer');
 var batch = require('gulp-batch');
 var browserSync = require('browser-sync').create();
-var center = require('postcss-center');
 var clean = require('gulp-clean');
 var clearfix = require('postcss-clearfix');
 var colorshort = require('postcss-color-short');
@@ -65,7 +64,6 @@ gulp.task('postcss', function () {
   var processors = [
     colorshort,
     focus,
-    center,
     precss,
     short,
     size,

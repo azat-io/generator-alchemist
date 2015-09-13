@@ -16,7 +16,6 @@
     "gulp-uglify": "^1.4.0",
     "gulp-watch": "^4.3.5",
     "postcss": "^5.0.4",
-    "postcss-center": "^1.0.0",
     "postcss-clearfix": "^0.2.0",
     "postcss-color-short": "^0.2.0",
     "postcss-focus": "^1.0.0",
