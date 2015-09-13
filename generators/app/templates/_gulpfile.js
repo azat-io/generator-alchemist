@@ -1,10 +1,10 @@
 var autoprefixer = require('autoprefixer');
 var batch = require('gulp-batch');
+var browserSync = require('browser-sync').create();
 var center = require('postcss-center');
 var clean = require('gulp-clean');
 var clearfix = require('postcss-clearfix');
 var colorshort = require('postcss-color-short');
-var connect = require('gulp-connect');
 var cssmqpacker = require('css-mqpacker');
 var cssnano = require('cssnano');
 var cssnext = require("cssnext");
@@ -12,7 +12,6 @@ var focus = require('postcss-focus');
 var gulp = require('gulp');
 var htmlhint = require('gulp-htmlhint');
 var imageop = require('gulp-image-optimization');
-var livereload = require('gulp-livereload');
 var postcss = require('gulp-postcss');
 var precss = require('precss');
 var pxtorem = require('postcss-pxtorem');
@@ -43,7 +42,7 @@ gulp.task('html', function() {
   gulp.src('src/html/**/*.html')
     .pipe(htmlhint())
     .pipe(gulp.dest('dist/'))
-    .pipe(connect.reload());
+    .pipe(browserSync.stream());
 });
 
 // PostCSS
@@ -66,16 +65,16 @@ gulp.task('postcss', function () {
   return gulp.src('src/css/*.css')
     .pipe(postcss(processors))
     .pipe(gulp.dest('dist/css/'))
-    .pipe(connect.reload());
+    .pipe(browserSync.stream());
 });
 
 // JavaScript
 
 gulp.task('js', function () {
-    return gulp.src('src/js/*')
-          .pipe(uglify())
-        .pipe(gulp.dest('dist/js'))
-        .pipe(connect.reload());
+  return gulp.src('src/js/*')
+    .pipe(uglify())
+    .pipe(gulp.dest('dist/js'))
+    .pipe(browserSync.stream());
 });
 
 // Image files
@@ -89,14 +88,16 @@ gulp.task('images', function(cb) {
   }))
   .pipe(clean())
   .pipe(gulp.dest('dist/images')).on('end', cb).on('error', cb)
-  .pipe(connect.reload());
+  .pipe(browserSync.stream());
 });
 
 // Server
 
 gulp.task('server', function() {
-  connect.server({
-    root: 'dist',
-    livereload: true
+  browserSync.init({
+    server: {
+      baseDir: "dist"
+    },
+    open: false
   });
 });
