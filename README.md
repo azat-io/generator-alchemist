@@ -106,44 +106,6 @@ Validate your HTML code.
 
 ### PostCSS
 
-##### [Autoprefixer](https://github.com/postcss/autoprefixer)
-
-Parse CSS and add vendor prefixes to CSS
-
-from:
-
-```css
-:fullscreen a {
-    display: flex
-}
-```
-
-to:
-
-```css
-:-webkit-full-screen a {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: flex
-}
-
-:-moz-full-screen a {
-    display: flex
-}
-
-:-ms-fullscreen a {
-    display: -ms-flexbox;
-    display: flex
-}
-
-:fullscreen a {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex
-}
-```
-
 #### [Clearfix](https://github.com/seaneking/postcss-clearfix)
 
 Adds fix and fix-legacy attributes to the clear property, for self-clearing of children
@@ -224,7 +186,7 @@ Best way to minify your CSS code
 
 #### [CSS Next](https://github.com/cssnext/cssnext)
 
-Use tomorrow's CSS syntax, today. Some examples:
+Add vendor prefixes to CSS. And allow to use tomorrow's CSS syntax, today. Some examples:
 
 CSS Custom Properties for cascading variables.
 
