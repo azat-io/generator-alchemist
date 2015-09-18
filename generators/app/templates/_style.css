@@ -39,7 +39,7 @@ a {
   text-decoration: none;
 }
 
-a:any-link {
+a:matches(:hover, :any-link) {
   outline: 0;
 }
 
