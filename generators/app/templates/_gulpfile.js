@@ -6,6 +6,7 @@ var colorshort = require('postcss-color-short');
 var cssmqpacker = require('css-mqpacker');
 var cssnano = require('cssnano');
 var cssnext = require("postcss-cssnext");
+var discardcomments = require("postcss-discard-comments");
 var focus = require('postcss-focus');
 var gulp = require('gulp');
 var htmlhint = require('gulp-htmlhint');
@@ -55,6 +56,7 @@ gulp.task('postcss', function () {
     pxtorem,
     cssnext,
     cssmqpacker,
+    discardcomments,
     cssnano
   ];
   return gulp.src('src/css/*.css')
