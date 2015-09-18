@@ -1,4 +1,3 @@
-var autoprefixer = require('autoprefixer');
 var batch = require('gulp-batch');
 var browserSync = require('browser-sync').create();
 var clean = require('gulp-clean');
@@ -70,7 +69,6 @@ gulp.task('postcss', function () {
     pxtorem,
     cssnext,
     cssmqpacker,
-    autoprefixer({ browsers: ['last 2 version'] }),
     cssnano
   ];
   return gulp.src('src/css/*.css')
