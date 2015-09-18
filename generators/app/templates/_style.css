@@ -123,40 +123,21 @@ td, th {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .container {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.container:before, .container:after {
-  content: " ";
-  display: table;
-}
-
-.container:after {
-  clear: both;
+  margin: * auto;
+  padding: * 15px;
+  clear: fix-legacy;
 }
 
 .row {
-  margin-left: -15px;
-  margin-right: -15px;
+  margin: * -15px;
+  clear: fix-legacy;
 }
 
-.row:before, .row:after {
-  content: " ";
-  display: table;
-}
-
-.row:after {
-  clear: both;
-}
 
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
   position: relative;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: * 15px;
 }
 
 @media (width >= 62em) {
@@ -229,13 +210,8 @@ td, th {
   display: block;
 }
 
-.clearfix:before, .clearfix:after {
-  display: table;
-  content: " ";
-}
-
-.clearfix:after {
-  clear: both;
+.clearfix {
+  clear: fix-legacy;
 }
 
 /* 1.3 Typography
