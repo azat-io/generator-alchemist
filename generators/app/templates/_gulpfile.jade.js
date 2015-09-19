@@ -63,7 +63,8 @@ gulp.task('postcss', function () {
         'postcss-cssnext',
         'css-mqpacker',
         'postcss-discard-comments',
-        'cssnano'
+        'cssnano',
+        'postcss-browser-reporter'
       ]
     }),
   ];
