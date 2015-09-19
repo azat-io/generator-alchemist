@@ -1,12 +1,28 @@
 /* Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
-1.0 General
-1.1 Reset
-1.2 Grid
-1.3 Typography
+0.0 List of PostCSS plugins
+0.1 General
+1.0 Reset
+1.1 Grid
+1.2 Typography
 */
 
-/* 1.1 General
+/* 0.0 List of PostCSS plugins
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@use postcss-short;
+@use postcss-color-short;
+@use postcss-focus;
+@use precss;
+@use postcss-size;
+@use postcss-clearfix;
+@use postcss-pxtorem;
+@use postcss-cssnext;
+@use css-mqpacker;
+@use postcss-discard-comments;
+@use cssnano;
+
+/* 0.1 General
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 :root{
@@ -19,7 +35,7 @@
 
 @custom-selector --grid .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12
 
-/* 1.1 Reset
+/* 1.0 Reset
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 html {
@@ -105,7 +121,7 @@ td, th {
   box-sizing: border-box;
 }
 
-/* 1.2 Grid
+/* 1.1 Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .container {
@@ -200,7 +216,7 @@ td, th {
   clear: fix-legacy;
 }
 
-/* 1.3 Typography
+/* 1.2 Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 h1, h2, h3, h4, h5, h6 {

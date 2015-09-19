@@ -22,6 +22,7 @@
     "postcss-pxtorem": "^3.0.0",
     "postcss-short": "^0.3.0",
     "postcss-size": "^1.0.0",
+    "postcss-use": "^2.0.0",
     "precss": "^1.1.3"
   }
 }

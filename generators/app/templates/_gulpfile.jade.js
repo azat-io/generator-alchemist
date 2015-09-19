@@ -1,23 +1,13 @@
 var batch = require('gulp-batch');
 var browserSync = require('browser-sync').create();
 var clean = require('gulp-clean');
-var clearfix = require('postcss-clearfix');
-var colorshort = require('postcss-color-short');
-var cssmqpacker = require('css-mqpacker');
-var cssnano = require('cssnano');
-var cssnext = require("postcss-cssnext");
-var discardcomments = require("postcss-discard-comments");
-var focus = require('postcss-focus');
 var gulp = require('gulp');
 var htmlhint = require('gulp-htmlhint');
 var imageop = require('gulp-image-optimization');
 var jade = require('gulp-jade');
 var postcss = require('gulp-postcss');
-var precss = require('precss');
-var pxtorem = require('postcss-pxtorem');
-var short = require('postcss-short');
-var size = require('postcss-size');
 var uglify = require('gulp-uglify');
+var use = require('postcss-use');
 var watch = require('gulp-watch');
 
 gulp.task('default', ['server'], function() {
@@ -61,17 +51,21 @@ gulp.task('html', function() {
 
 gulp.task('postcss', function () {
   var processors = [
-    colorshort,
-    focus,
-    precss,
-    short,
-    size,
-    clearfix,
-    pxtorem,
-    cssnext,
-    cssmqpacker,
-    discardcomments,
-    cssnano
+    use({
+      modules:[
+        'postcss-short',
+        'postcss-color-short',
+        'postcss-focus',
+        'precss',
+        'postcss-size',
+        'postcss-clearfix',
+        'postcss-pxtorem',
+        'postcss-cssnext',
+        'css-mqpacker',
+        'postcss-discard-comments',
+        'cssnano'
+      ]
+    }),
   ];
   return gulp.src('src/css/*.css')
     .pipe(postcss(processors))
