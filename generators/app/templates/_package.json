@@ -21,9 +21,9 @@
     "postcss-discard-comments": "^2.0.0",
     "postcss-focus": "^1.0.0",
     "postcss-pxtorem": "^3.0.0",
+    "postcss-responsive-images": "^1.0.1",
     "postcss-short": "^1.1.0",
     "postcss-size": "^1.0.0",
-    "postcss-use": "^2.0.0",
     "precss": "^1.1.3"
   }
 }

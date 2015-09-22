@@ -1,29 +1,13 @@
 /* Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
-0.0 List of PostCSS plugins
-0.1 General
+0.0 General
 1.0 Reset
 1.1 Grid
 1.2 Typography
 */
 
-/* 0.0 List of PostCSS plugins
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-@use postcss-short;
-@use postcss-color-short;
-@use postcss-focus;
-@use precss;
-@use postcss-size;
-@use postcss-clearfix;
-@use postcss-pxtorem;
-@use postcss-cssnext;
-@use css-mqpacker;
-@use postcss-discard-comments;
-@use cssnano;
-@use postcss-browser-reporter;
-
-/* 0.1 General
+/* 0.0 General
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 :root{
@@ -208,9 +192,7 @@ td, th {
 }
 
 .img-responsive {
-  max-width: var(--fullWidth);
-  height: auto;
-  display: block;
+  image-size: responsive;
 }
 
 .clearfix {
@@ -285,8 +267,4 @@ h6 {
   h6 {
     font-size: calc(var(--fontSize)*1.2);
   }
-}
-
-p {
-  margin-top: 0;
 }
