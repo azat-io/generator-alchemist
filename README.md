@@ -258,9 +258,9 @@ from:
 body {
   background: color(red a(90%))
 }
+to:
 ```
 
-to:
 
 ```css
 body {
@@ -332,7 +332,7 @@ from:
 
 ```css
 p {
-    font-size: 16px;
+  font-size: 16px;
 }
 ```
 
@@ -340,7 +340,29 @@ to:
 
 ```css
 p {
-    font-size: 1rem;
+  font-size: 1rem;
+}
+```
+
+#### [Responsive Images](https://github.com/azat-io/postcss-responsive-images)
+
+PostCSS plugin for making responsive images.
+
+from:
+
+```css
+.boo img {
+  image-size: responsive;
+}
+```
+
+to:
+
+```css
+.boo img {
+  max-width:100%;
+  height:auto;
+  display:block;
 }
 ```
 
