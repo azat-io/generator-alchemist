@@ -62,22 +62,18 @@ gulp.task('html', function() {
 
 gulp.task('postcss', function () {
   var processors = [
-    use({
-      modules:[
-        'postcss-short',
-        'postcss-color-short',
-        'postcss-focus',
-        'precss',
-        'postcss-size',
-        'postcss-clearfix',
-        'postcss-pxtorem',
-        'postcss-cssnext',
-        'css-mqpacker',
-        'postcss-discard-comments',
-        'cssnano',
-        'postcss-browser-reporter'
-      ]
-    }),
+    colorShort,
+    focus,
+    precss,
+    short,
+    size,
+    responsiveImages,
+    clearFix,
+    px2Rem,
+    cssNext,
+    cssMqpacker,
+    discardComments,
+    cssNano
   ];
   return gulp.src('src/css/*.css')
     .pipe(postcss(processors))
