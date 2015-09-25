@@ -1,5 +1,6 @@
 var batch = require('gulp-batch');
 var browserSync = require('browser-sync').create();
+var byeBye = require('css-byebye');
 var clean = require('gulp-clean');
 var clearFix = require('postcss-clearfix');
 var colorShort = require('postcss-color-short');
@@ -58,6 +59,7 @@ gulp.task('postcss', function () {
     px2Rem,
     cssNext,
     cssMqpacker,
+    byeBye,
     discardComments,
     cssNano
   ];
