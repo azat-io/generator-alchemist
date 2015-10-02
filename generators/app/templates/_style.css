@@ -18,8 +18,6 @@
 @custom-media --small-viewport (max-width: 30em);
 @custom-media --large-viewport (min-width: 75em);
 
-@custom-selector --grid .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12
-
 /* 1.0 Reset
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -121,7 +119,7 @@ td, th {
 }
 
 
---grid {
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
   position: relative;
   min-height: 1px;
   padding: * 15px;
