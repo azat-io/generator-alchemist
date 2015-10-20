@@ -8,7 +8,7 @@
     "type": "git",
     "url": "git+https://github.com/azat-io/generator-alchemist.git"
   },
-  "author": "Azat S. <azatklevec@gmail.com> (https://github.com/azat-io)",
+  "author": "Azat S. <to@azat.io> (https://github.com/azat-io)",
   "scripts": {
     "test": "mocha"
   },
