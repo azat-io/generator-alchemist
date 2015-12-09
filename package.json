@@ -23,9 +23,9 @@
     "cssnext"
   ],
   "dependencies": {
-    "yeoman-generator": "^0.20.3",
+    "yeoman-generator": "^0.21.1",
     "chalk": "^1.1.1",
-    "yosay": "^1.0.5"
+    "yosay": "^1.1.0"
   },
   "devDependencies": {
     "mocha": "*"
