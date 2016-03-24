@@ -14,15 +14,15 @@ module.exports = yeoman.generators.Base.extend({
     var prompts = [
       {
         type: 'confirm',
-        name: 'jadeLang',
-        message: 'Would you like to use Jade?',
+        name: 'pugLang',
+        message: 'Would you like to use pug?',
         default: true,
       }
     ];
 
     this.prompt(prompts, function (answers) {
       this.appName = answers.appName;
-      this.jadeLang = answers.jadeLang;
+      this.pugLang = answers.pugLang;
       done();
     }.bind(this));
   },
@@ -64,14 +64,14 @@ module.exports = yeoman.generators.Base.extend({
         this.templatePath('_style.css'),
         this.destinationPath('src/css/style.css')
       );
-      if (this.jadeLang == true) {
-        this.mkdir('src/jade');
+      if (this.pugLang == true) {
+        this.mkdir('src/pug');
         this.fs.copy(
-          this.templatePath('_index.jade'),
-          this.destinationPath('src/jade/index.jade')
+          this.templatePath('_index.pug'),
+          this.destinationPath('src/pug/index.pug')
         );
         this.fs.copy(
-          this.templatePath('_gulpfile.jade.js'),
+          this.templatePath('_gulpfile.pug.js'),
           this.destinationPath('gulpfile.js')
         );
       } else {
