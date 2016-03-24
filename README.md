@@ -1,6 +1,6 @@
 # generator-alchemist
 
-<img align="right" width="110" height="150" src="https://github.com/azat-io/generator-alchemist/blob/master/images/logo.jpg?raw=true" alt="">
+<img align="right" width="110" height="150" src="https://cloud.githubusercontent.com/assets/5698350/14023631/4b47c384-f1f6-11e5-931b-2d3849eaa86e.jpg?raw=true" alt="">
 
 [![npm version](https://badge.fury.io/js/generator-alchemist.svg)](http://badge.fury.io/js/generator-alchemist)
 [![Build Status](https://secure.travis-ci.org/azat-io/generator-alchemist.png?branch=master)](https://travis-ci.org/azat-io/generator-alchemist)
@@ -48,8 +48,6 @@ Finally, initiate the generator to your project folder:
 $ yo alchemist
 ```
 
-![](https://github.com/azat-io/generator-alchemist/blob/master/images/jade.jpg?raw=true)
-
 Jade language is optional in Alchemist generator. Put Y or N to use it or not.
 
 After installation run gulp
@@ -71,7 +69,7 @@ Thank's for usage!
 
 ## Contents
 
-![](https://github.com/azat-io/generator-alchemist/blob/master/images/alchemist.jpg?raw=true)
+![](https://cloud.githubusercontent.com/assets/5698350/14023678/86b82ecc-f1f6-11e5-98e1-e607ce946d41.jpg)
 
 ### Jade (optional)
 
@@ -468,21 +466,6 @@ You can use local webserver with [BrowserSync](https://github.com/Browsersync/br
 ```bash
 http://localhost:3000
 ```
-
-## Author
-
-Azat S.
-
-<a href="https://github.com/azat-io">
-  <img src="https://raw.githubusercontent.com/azat-io/generator-alchemist/master/images/github.png" style="float:right">
-</a>
-<a href="https://twitter.com/azat_io">
-  <img src="https://raw.githubusercontent.com/azat-io/generator-alchemist/master/images/twitter.png" style="float:right">
-</a>
-<a href="https://www.facebook.com/azats.io">
-  <img src="https://raw.githubusercontent.com/azat-io/generator-alchemist/master/images/facebook.png" style="float:right">
-</a>
-
 
 ## License
 
