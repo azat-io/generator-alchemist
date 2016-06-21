@@ -6,6 +6,8 @@
 [![Build Status](https://secure.travis-ci.org/azat-io/generator-alchemist.png?branch=master)](https://travis-ci.org/azat-io/generator-alchemist)
 [![Dependency Status](https://david-dm.org/azat-io/generator-alchemist.svg)](https://david-dm.org/azat-io/generator-alchemist)
 
+<p style="color:red"><b>Important! This generator is deprecated!</b></p>
+
 [Yeoman](https://github.com/yeoman/yeoman) generator for development a front-end web app using [Gulp](https://github.com/gulpjs/gulp) and [PostCSS](https://github.com/postcss/postcss) for the build process.
 
 Start your new project in a few seconds!
