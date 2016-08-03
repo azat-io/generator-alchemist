@@ -10,6 +10,7 @@
   },
   "author": "Azat S. <to@azat.io> (https://github.com/azat-io)",
   "scripts": {
+    "lint": "./node_modules/.bin/eslint --ignore-path .gitignore .",
     "test": "mocha"
   },
   "files": [
@@ -23,12 +24,16 @@
     "cssnext"
   ],
   "dependencies": {
-    "yeoman-generator": "^0.22.1",
-    "chalk": "^1.1.1",
-    "yosay": "^1.1.0"
+    "yeoman-generator": "0.24.1",
+    "chalk": "1.1.1",
+    "yosay": "1.1.0"
   },
   "devDependencies": {
-    "mocha": "*"
+    "eslint": "^3.1.1",
+    "eslint-config-standard": "^5.3.5",
+    "eslint-plugin-promise": "^2.0.0",
+    "eslint-plugin-standard": "^2.0.0",
+    "mocha": "2.5.3"
   },
   "bugs": {
     "url": "https://github.com/azat-io/generator-alchemist/issues"
